@@ -1,0 +1,18 @@
+
+Finite State Machines
+
+Representing FSM: 
+	> We can use Python Dicitionaries (or) Maps to represent the FSM
+	> Eg: edges[(1, 'a')] = 2 mean we created an edge from 1 to 2 on a;
+
+
+
+Ambiguity & Epsilon:
+	> A FSM accepts a String s if there exists "even one path" from the start
+	  state to any accepting state following
+
+Non-Deterministic FSM
+	> "Easy to write" fsms with epsilon transmitters or ambiguity
+
+Every Non-Deterministic FSM has a corresponding Deterministic FSM that accepts 
+exactly the same string

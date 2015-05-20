@@ -1,0 +1,6 @@
+Python always checks for methods written with name 't_'. If it is written then 
+it checks for the regular expression and processes it.
+
+Once it finds the reg expression, it constructs a FSM or NFSM and updates it 
+lookup table. Lookup table consists of the states and their transitions. This
+table is similar to edges dicitonary. Except that this table is much more big.

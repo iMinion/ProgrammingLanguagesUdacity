@@ -1,0 +1,20 @@
+We will be breaking down the tags as follows
+
+	words 					Hi
+	start of the tags 		<
+	word					b
+	end of the tags 		>
+	words					hello all
+
+
+Tokens:
+	> Lexical Analysis produces tokens i.e., all the words, punctuations, tags etc.,
+	  will be seen as tokens
+	> White spaces aren't considered as tokens
+	> Token Value means, the value of the string it matched
+
+// Refer to the examples of how the STRING & WORD token generators are written
+Ordering of Lexical Analyzer token producer function is important.
+For eg: "hello, "world"" can either be WORD  STRING tokes or WORD   WORD Tokens
+									  hello, "world"        hello,  "world"
+We get to 1 if STRING def. is written over word def.

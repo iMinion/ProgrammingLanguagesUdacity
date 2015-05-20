@@ -1,0 +1,103 @@
+Find:
+> Python Variant of indexOf = find()
+> Usage = stringObject.find(subString)
+		  stringObject.find(subString, int start)
+		  returns -1 if it is not present
+
+Substring:
+> Python variant to substring() = string[startPos:endPos]
+> // if end pos is not given then it will go as far as possible
+> Usage = "hello"[1:3] = 'el'
+    	  "hello"[1:] = 'ello'
+    	  "hello"[1:-1] = 'ell' // negative numbers are used in python
+    	  						// to state that pos from the end
+
+Split():
+> Similar to java Split
+> String.split() automatically  splits the string at ' ';
+> split() returns an array of strings which have the splitting string in
+  between them
+
+/*
+* A "module" is a repository or a library of functions and data.
+* In Python, "import" brings in a module
+*/
+
+Regular Expressions:
+> Concise Notation of Simple Strings are known regular expressions
+> [1-4] "matches" or "denotes" for {"1", "2", "3", "4"}
+> python's regex module is "re" -> "import re"
+> Python's Regex r"[0-9]"
+> 'r' must be deleberately given, so that the Python's interpreter can
+  understand that it is a Regular Expression and not an Ordinary String
+
+findall(regex, string) : Returns a list of elements that the regex is 
+						 matching with the parts of the string
+
+Concatenation & Glueing of RegEx
+Concatenation: r"[a-c][0-9]" we've made regex that checks for two character
+			   -s in a string with first char b/w a to c and second one b/w
+			   0 - 9
+
+
+One or More
+> '+' one or more copies
+> '+' checks for the regex until that point and repeats it infinitely
+> for eg: r"a+" matches for a, aa, aaa, aaaa,...
+
+Rule of Maximul Munch
+> RegEx must consume maximum string at once rather than its smaller counter 
+  parts
+> Eg: re.findall(r"[0-9]+", 13 from 1 in 1776) will retrieve
+	['13', '1', '1776'] instead of ['1','3','1','1','7','7','6']
+
+Finite State Machine
+> These are the visual explanation of regular expressions
+
+Regex OR Operator '|'
+> This is similar to OR operator
+> Eg: re"[a-z]+|[0-9]" matches for 'hello' & '1234'
+
+Regex OPTIONAL Operator '?'
+> The previous thing may exist or may not exist
+> Eg: re.findall(r"-?[0-9]+", "1941-2013") retrieves ['1941', '-2013']
+
+Zero or More Copies
+> '*' zero or more copies
+
+Escape Sequences
+> '\' used as an escape sequence when we need to include special chars as a
+  part of our regex
+
+Regex MATCHANYTHING Operator '.'
+> This regex Operator will match any character except '\n'
+> re.findall(r"[0-9].[0-9]", "1s34 56*988a"); returns ['1s3', '4 5', '6*9']
+
+Regex NOT Operator '^'
+> Matches ony if the string doesn't belong to the regex pattern
+> re.findall(r"[0-9].[^0-9]", "1s34 56*988a"); returns ['34 ', '56*', '88a']
+
+Regex GROUP Operator '(?:' ')'
+> (?: and ) to group regular expressions
+> re.findall(r"(?:do|re|mi)+", "mimi dore rere midore doo-wap") returns
+  ['mimi', 'dore', 'rere', 'midore', 'do']
+
+
+Maps in Python: 
+> We create a Map in Python by using a pair of Curly Braces
+> Eg: is_flower = {} | is_flower = {'rose':True, 'dog':False} | 
+	  is_flower['rose'] = True
+
+Python Tuple:
+> These are immutable lists(Which cannot be changed)
+> Eg: tup1 = ('physics', 'chemistry', 1997, 2000);
+
+
+LAMBDA:
+> Python allows me to write a function out of no where by calling the lamda
+> Eg: findmax(lambda(word): word.find("l"), l)
+
+
+MAP (function):
+> Maps in python takes a function as one of its param and any number of iterable
+  lists(minimum is 1) and applies the function on all these lists

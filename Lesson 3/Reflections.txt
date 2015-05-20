@@ -1,0 +1,8 @@
+> Chomsky states that utterances have syntactic rules (Formal Grammars)
+	> By syntactic rules we mean what can a sentence be?
+	> Formal Grammars stand for the grammars we use 
+
+> Optional Parts of Languages
+	> Often we come across sentences that have parts
+	Eg: "I think" && "I think correctly" < The use of word "correctly" in the
+	second sentence is strictly optional
